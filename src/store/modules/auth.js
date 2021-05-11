@@ -23,6 +23,7 @@ const actions = {
 		router.push('/');
 	},
 	logout: ({ commit }) => {
+		console.log('here');
 		commit('setToken', null);
 		window.localStorage.removeItem('imgur_token');
 	}
